@@ -12,6 +12,9 @@ import './index.css';
 
 import Home from './page/home.js';
 import Login from './page/login.js';
+import Project from './page/project.js';
+import Submission from './page/submission.js';
+import Mypage from './page/mypage.js';
 
 
 
@@ -20,7 +23,10 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element = {<Home/>} exact/>
-        <Route path="/login" element = {<Login/>} exact/>
+        <Route path="/login" element = {<Login/>} />
+        <Route path="/project" element = {<Project/>} />
+        <Route path="/submission" element = {<Submission/>} />
+        <Route path="/mypage" element = {<Mypage/>} />
       </Routes>
     </BrowserRouter>,
     root
