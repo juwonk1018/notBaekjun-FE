@@ -1,5 +1,7 @@
 import React, {useState} from "react";
-import { Tabs, Tab, Typography, Box} from "@material-ui/core";
+import { Tabs, Tab, Typography, Box } from "@material-ui/core";
+import ProjectDisplay from './projectDisplay.js'
+import './mainBar.css';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -14,19 +16,13 @@ function TabPanel(props) {
       {...other}
     >
       {value === index && (
-        <Box p={3}>
+        <Box color="text.primary" p={3}>
           <Typography>{children}</Typography>
         </Box>
       )}
     </div>
   );
 }
-
-TabPanel.propTypes = {
-  children: PropTypes.node,
-  index: PropTypes.any.isRequired,
-  value: PropTypes.any.isRequired,
-};
 
 function a11yProps(index) {
   return {
@@ -36,19 +32,19 @@ function a11yProps(index) {
 }
 
 const useStyles = makeStyles((theme) => ({
-  root: {
+  projectList: {
     flexGrow: 1,
     marginTop : 100,
     marginLeft : 50,
     display: 'flex',
     height: 400,
+    width: 1000,
   },
   tabs: {
     borderRight: `1px solid ${theme.palette.divider}`,
   },
 }));
 
-    
 function ProjectList() {
     const classes = useStyles();
     const [value, setValue] = useState(0);
@@ -58,20 +54,27 @@ function ProjectList() {
     };
 
     return (
-        <div className={classes.root}>
+        <div className={classes.projectList}>
+
+        
         <Tabs orientation="vertical" variant="scrollable" value={value} onChange={handleChange} className={classes.tabs}>
-          <Tab label="Project 1" {...a11yProps(0)} />
-          <Tab label="Project 2" {...a11yProps(1)} />
-          <Tab label="Project 3" {...a11yProps(2)} />
-          <Tab label="Project 4" {...a11yProps(3)} />
-          <Tab label="Project 5" {...a11yProps(4)} />
-          <Tab label="Project 6" {...a11yProps(5)} />
-          <Tab label="Project 7" {...a11yProps(6)} />
+          <Tab label="사용자 프로젝트 1" {...a11yProps(0)} />
+          <Tab label="사용자 프로젝트 2" {...a11yProps(1)} />
+          <Tab label="사용자 프로젝트 3" {...a11yProps(2)} />
+          <Tab label="사용자 프로젝트 4" {...a11yProps(3)} />
+          <Tab label="사용자 프로젝트 5" {...a11yProps(4)} />
+          <Tab label="사용자 프로젝트 6" {...a11yProps(5)} />
+          <Tab label="사용자 프로젝트 7" {...a11yProps(6)} />
         </Tabs>
         
         <TabPanel value={value} index={0}>
-          Item One
+          <Box bgcolor="primary.main" color="primary.contrastText" p={2}>
+            <Typography>사용자 프로젝트 1 설명</Typography>
+          </Box>
+          
+          <ProjectDisplay/>
         </TabPanel>
+        
         <TabPanel value={value} index={1}>
           Item Two
         </TabPanel>
