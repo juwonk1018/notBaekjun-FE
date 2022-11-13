@@ -1,0 +1,109 @@
+body {
+    font-size: 1.6rem;
+    font-family: "Open Sans", sans-serif;
+    color: #2b3e51;
+  }
+  
+  h2 {
+    font-weight: 300;
+    text-align: center;
+  }
+  
+  p {
+    position: relative;
+  }
+  
+  .picDiv {
+    position: relative;
+    text-align: center;
+    border: 5px solid #2b3e51;
+    justify-content: center;
+    display: flex;
+  }
+
+  img {
+    position: relative;
+  }
+
+    
+  .listDiv_wrap {
+    position: relative;
+    text-align: center;
+    border: 5px double #2b3e51;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .listDiv_title {
+    position: relative;
+    text-align: center;
+    border: 5px solid #2b3e51;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+  }
+  .tempDiv {
+    float:left; 
+    width:25%;
+}
+.titleDiv{
+    float:left; 
+    width:50%;
+}
+.buttonDiv{
+    float:right;
+    width:25%;
+}
+
+  .button_plus {
+    position: relative;
+    width: 75px;
+    height: 75px;
+    background: #fff;
+    cursor: pointer;
+    top: 10%;
+    left: 80%;
+    justify-content: left;
+  }
+  
+  .button_plus:after {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 4px;
+    width: 50%;
+    background: #2b3e51;
+    top: 50%;
+    left: 50%;
+  }
+  
+  .button_plus:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #2b3e51;
+    height: 50%;
+    width: 4px;
+  }
+  
+  .button_plus:hover:before,
+  .button_plus:hover:after {
+    background: #fff;
+    transition: 0.2s;
+  }
+  
+  .button_plus:hover {
+    background-color: #2b3e51;
+    transition: 0.2s;
+  }
+
+  .listDiv_list {
+    position: relative;
+    text-align: center;
+    border: 3px solid #2b3e51;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+  }
