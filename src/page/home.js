@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import MainBar from '../component/mainBar.js';
 import Footer  from '../component/footer.js';
 import './home.css'
-import Image from './temp.jpg'
 
 // 간소화된 프로젝트 리스트, 프로젝트 생성 버튼
 
@@ -12,7 +11,7 @@ function Home() {
       <div>
         <MainBar val = {0}/>
         <div class = "picDiv">
-          <img src={Image} alt="temp" width="1500" height="800"/>
+          
         </div>
         <div class = "listDiv_wrap">
           <div class = "listDiv_title">

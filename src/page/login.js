@@ -18,7 +18,7 @@ function Login() {
         </p>
       </form>
       <div id="create-account-wrap">
-        <p>Not a member? <a href="./signup.js">Create Account</a></p>
+        <p>Not a member? <a href="./signup">Create Account</a></p>
       </div>
     </div>
   );

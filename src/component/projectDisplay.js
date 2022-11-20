@@ -7,7 +7,7 @@ function createData(name, calories, fat, carbs, protein) {
   }
   
 const rows = [
-    createData('Test Case 1', '테스트케이스 1', 6.0, 24, '테스트케이스..',),
+    createData('Test Case 1', '테스트케이스 1', 6.0, 24, '테스트케이스 example 1',),
     createData('Test Case 2', '테스트케이스 2', 9.0, 37, '테스트케이스..',),
     createData('Test Case 3', '테스트케이스 3', 16.0, 24, '테스트케이스..',),
     createData('Test Case 4', '테스트케이스 4', 3.7, 67, '테스트케이스..',),

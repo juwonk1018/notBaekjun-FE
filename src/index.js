@@ -15,6 +15,8 @@ import Login from './page/login.js';
 import Project from './page/project.js';
 import Submission from './page/submission.js';
 import Mypage from './page/mypage.js';
+import Signup from './page/signup.js';
+import AddProject from './page/addproject.js';
 
 
 
@@ -27,6 +29,8 @@ root.render(
         <Route path="/project" element = {<Project/>} />
         <Route path="/submission" element = {<Submission/>} />
         <Route path="/mypage" element = {<Mypage/>} />
+        <Route path="/signup" element = {<Signup/>} />
+        <Route path="/addproject" element = {<AddProject/>} />
       </Routes>
     </BrowserRouter>,
     root

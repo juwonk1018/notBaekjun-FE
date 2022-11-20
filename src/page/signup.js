@@ -1,13 +1,13 @@
 import React from 'react';
 import "./signup.css"
 
-function Login() {
+function Signup() {
 
   return (
     <div class="form_wrapper">
         <div class="form_container">
             <div class="title_container">
-                <h2>Sigan up</h2>
+                <h2>Sign up</h2>
             </div>
             <div class="row clearfix">
                 <div>
@@ -57,4 +57,4 @@ function Login() {
   );
   }
 
-  export default Login;
+  export default Signup;
