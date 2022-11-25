@@ -1,0 +1,87 @@
+body {
+    font-size: 1.6rem;
+    font-family: "Open Sans", sans-serif;
+    color: #2b3e51;
+  }
+  
+  h2 {
+    font-weight: 300;
+    text-align: center;
+  }
+  
+  p {
+    position: relative;
+  }
+
+  .wrap {
+    position: relative;
+    padding-top: 15px;
+  }
+
+  .inputDiv {
+    height: 520px;
+    width: 45%;
+    float: left;
+    padding: 25px;
+  }
+  .input {
+    width: 100%;
+    height: 80%;
+    border: 3px solid #3ca9e2;
+    padding: 20px;
+    display: inline-block;
+    resize: none;
+  }
+
+  .fileInputButton{
+    padding: 6px 25px;
+    background-color:#3ca9e2;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    line-height: 150%;
+}
+
+
+.inputWrap{
+    text-align: center;
+    justify-content: center;
+}
+
+.option{
+    height: 520px;
+    width: 45%;
+    float: right;
+    border: 3px solid #3ca9e2;
+}
+
+
+.outputDiv{
+    border: 3px solid #3ca9e2;
+    position: relative;
+    height: 200px;
+    margin-top: 550px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+}
+
+.outputTitle{
+    text-align: center;
+    position: relative;
+
+    margin: 0px;
+}
+
+.outputDiv{
+
+}
+
+.fileDiv{
+    display: block;
+    margin: auto;
+    position: relative;
+    text-align: center;
+}
+
