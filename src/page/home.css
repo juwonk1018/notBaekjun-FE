@@ -16,7 +16,6 @@ body {
   .picDiv {
     position: relative;
     text-align: center;
-    border: 5px solid #2b3e51;
     justify-content: center;
     display: flex;
   }
@@ -29,7 +28,7 @@ body {
   .listDiv_wrap {
     position: relative;
     text-align: center;
-    border: 5px double #2b3e51;
+    border: 5px double #3ca9e2;
     justify-content: center;
     display: flex;
     flex-direction: column;
@@ -37,7 +36,7 @@ body {
   .listDiv_title {
     position: relative;
     text-align: center;
-    border: 5px solid #2b3e51;
+    border: 5px solid #3ca9e2;
     justify-content: center;
     display: flex;
     width: 100%;
@@ -61,8 +60,8 @@ body {
     height: 75px;
     background: #fff;
     cursor: pointer;
-    top: 10%;
-    left: 80%;
+    top: 15%;
+    left: 70%;
     justify-content: left;
   }
   
@@ -72,7 +71,7 @@ body {
     transform: translate(-50%, -50%);
     height: 4px;
     width: 50%;
-    background: #2b3e51;
+    background: #3ca9e2;
     top: 50%;
     left: 50%;
   }
@@ -83,7 +82,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #2b3e51;
+    background: #3ca9e2;
     height: 50%;
     width: 4px;
   }
@@ -95,14 +94,14 @@ body {
   }
   
   .button_plus:hover {
-    background-color: #2b3e51;
+    background-color: #3ca9e2;
     transition: 0.2s;
   }
 
   .listDiv_list {
     position: relative;
     text-align: center;
-    border: 3px solid #2b3e51;
+    border: 3px solid #3ca9e2;
     justify-content: center;
     display: flex;
     width: 100%;
