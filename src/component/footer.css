@@ -11,7 +11,7 @@
 	width: 100%;
 	font: bold 16px sans-serif;
 	text-align: left;
-	padding: 50px 60px 40px;
+	padding: 10px 60px 40px;
 	overflow: hidden;
 }
 
@@ -19,7 +19,9 @@
 /* Footer left */
 
 .footer-distributed .footer-left{
+	top: 0;
 	float: left;
+	background-color: red;
 }
 	
 /* The logo */
@@ -47,13 +49,6 @@
 	line-height: 1.8;
 	text-decoration: none;
 	color:  inherit;
-}
-
-.footer-distributed .footer-name{
-	color:  #8f9296;
-	font-size: 14px;
-	font-weight: normal;
-	margin: 0;
 }
 
 /* Footer Right */
@@ -89,7 +84,7 @@
 	color:  #d1d2d2;
 
 	width: 400px;
-	padding: 18px;
+	padding: 15px;
 }
 
 .footer-distributed ::-webkit-input-placeholder {
@@ -107,13 +102,13 @@
 
 
 .footer-distributed form input{
-	height: 55px;
+	height: 25px;
 	margin-bottom: 15px;
 }
 
 .footer-distributed form textarea{
-	height: 100px;
-	margin-bottom: 20px;
+	height: 50px;
+	margin-bottom: 10px;
 }
 
 .footer-distributed form button{
@@ -121,19 +116,20 @@
 	background-color:  #33383b;
 	color: #ffffff;
 	border: 0;
-	padding: 15px 50px;
+	padding: 0px 40px;
 	font-weight: bold;
 	float: right;
+	height: 45px;
+}
+
+.links{
+	padding-right: 120px;
 }
 
 @media (max-width: 1000px) {
 
 	.footer-distributed {
 		font: bold 14px sans-serif;
-	}
-
-	.footer-distributed .footer-company-name{
-		font-size: 12px;
 	}
 
 	.footer-distributed form input,
@@ -164,9 +160,6 @@
 		margin-bottom: 40px;
 	}
 
-	.footer-distributed form{
-		margin-top: 30px;
-	}
 
 	.footer-distributed form{
 		display: block;

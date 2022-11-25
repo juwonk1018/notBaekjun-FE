@@ -8,15 +8,15 @@ export default function App() {
             <div class="footer-left">
                 <h3>Not<span>BaekJun</span></h3>
                 <p class="footer-links">
-                    <a href="#"> Home </a>
-                     · 
-                    <a href="#">About Us</a>
                     ·
-                    <a href="#">FaQ</a>
+                    <a className = "links" href="#">Home </a>
+                    · 
+                    <a className = "links" href="#">About Us</a>
                     ·
-                    <a href="#">Contact Us</a>
+                    <a className = "links" href="#">FaQ</a>
+                    ·
+                    <a className = "links" href="#">Terms of Service</a>
                 </p>
-                <p class="footer-name">Not BaekJun</p>
             </div>
             <div class="footer-right">
                 <p>Contact Us</p>
