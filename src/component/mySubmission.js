@@ -1,9 +1,6 @@
 import React, {useState} from "react";
-import DragDrop from './dragDrop.js';
 import { Button } from "@material-ui/core";
 import "./mySubmission.css"
-
-
 
 
 function MySubmission() {
