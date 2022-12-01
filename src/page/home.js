@@ -14,7 +14,7 @@ class Home extends Component {
       <div className='wrapper'>
         
         <MainBar val = {0} className = "mainBar"/>
-  
+        
         <div className="mainBody">  
           <span>main Body</span>
         </div>

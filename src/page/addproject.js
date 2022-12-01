@@ -7,7 +7,8 @@ function AddProject() {
     return (
       <div>
         <MainBar val = {1}/>
-        add Project
+        프로젝트 이름
+        프로젝트 설명
       </div>   
     );
   }

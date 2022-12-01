@@ -1,13 +1,19 @@
 .listContainer{
-    margin-top : 30px;
-    height : 50px;
-    width : 1200px;
+    display: flex;
+    flex : 1;
+    flex-direction: column;
+    height : 100vh;
+    width : 100%;
+    margin : 0px 0px 0px 0px;
+    text-align: center;
 }
 
 .addButtondiv{
-    float : left;
-    margin-left : 70px;
-    margin-bottom : 15px;
-    height : 50px;
-    width : 150px;
+    margin : 0px 0px 0px 0px;    
 }
+
+.testCaseAdd{
+    margin: 15px 0px 0px 0px;
+    text-align: right;
+}
+
