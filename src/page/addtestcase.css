@@ -1,4 +1,4 @@
-.addProjectWrapper{
+.addTestCaseWrapper{
     display : flex;
     flex-direction: column;
     height : 100vh;
@@ -10,6 +10,12 @@
 .formWrapper{
     margin-top : 30px;
 }
+
+.fileWrapper{
+    text-align: center;
+    margin-top : 30px;
+}
+
 .buttonGroup{
     text-align: center;
     margin-top : 50px;

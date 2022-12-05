@@ -1,6 +1,8 @@
 import React, {useState} from "react";
 import MainBar from '../component/mainBar.js';
 import ProjectList from '../component/projectList.js';
+import Footer  from '../component/footer.js';
+
 import './project.css'
 // 프로젝트 목록에서 프로젝트 선택
 //   → TC 목록 (TC 평가 기능)
@@ -13,7 +15,8 @@ function Project() {
     return (
         <div>
             <MainBar val = {1}/>
-            <ProjectList/>
+            <ProjectList show = {true} width = {1500}/>
+            <Footer/>
         </div>
 
     );

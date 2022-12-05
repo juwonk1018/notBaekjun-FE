@@ -17,6 +17,7 @@ import Submission from './page/submission.js';
 import Mypage from './page/mypage.js';
 import Signup from './page/signup.js';
 import AddProject from './page/addproject.js';
+import AddTestCase from './page/addtestcase.js';
 
 
 
@@ -31,6 +32,7 @@ root.render(
         <Route path="/mypage" element = {<Mypage/>} />
         <Route path="/signup" element = {<Signup/>} />
         <Route path="/addproject" element = {<AddProject/>} />
+        <Route path="/addtestcase" element = {<AddTestCase/>} />
       </Routes>
     </BrowserRouter>,
     root

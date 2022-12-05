@@ -1,5 +1,4 @@
 import ProjectDisplay from './projectDisplay.js'
-import Footer  from '../component/footer.js';
 import './mainBar.css';
 import './projectList.css';
 
@@ -55,22 +54,25 @@ const useStyles = makeStyles((theme) => ({
 
 // Code
 
-function ProjectList() {
+function ProjectList(props) {
     const classes = useStyles();
     const [value, setValue] = useState(0);
+    const [show, setShow] = useState(props.show);
+    
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
-
     return (
         <div>
           <div className = "listContainer">
             <div className={classes.projectList}>
               <Tabs orientation="vertical" variant="scrollable" value={value} onChange={handleChange} className={classes.tabs}>
-                <div className = "addButtondiv">
-                  <Button variant="outlined" href="./addproject">New Project</Button>
-                </div>
+                {show &&
+                  <div className = "addButtondiv">
+                    <Button variant="outlined" href="./addproject">New Project</Button>
+                  </div>
+                }
                   <Tab value = {0} label="사용자 프로젝트 1" {...a11yProps(0)} />
                   <Tab value = {1} label="사용자 프로젝트 2" {...a11yProps(1)} />
                   <Tab value = {2} label="사용자 프로젝트 3" {...a11yProps(2)} />
@@ -88,14 +90,15 @@ function ProjectList() {
                 </Box>
 
                 <Box textAlign="left" width="1000px">
-                　프로젝트트 트 프로젝트 설명젝트 설명프로젝트 설명프로젝트 설명로젝트 설명프로젝트 설프
+                　프로젝트 1에 대한 상세 설명
                 </Box>
                 
-                <ProjectDisplay/>
-
+                <ProjectDisplay display = {props.show}/>
+                {show &&
                 <div className = "testCaseAdd">
-                  <Button variant = "outlined" color = "primary" href="./submission" component={Link} >New TestCase</Button>
+                  <Button variant = "outlined" color = "primary" href="./addtestcase" component={Link} >New TestCase</Button>
                 </div>
+                }
               </TabPanel>
                 
               <TabPanel value={value} index={1}>
@@ -120,7 +123,6 @@ function ProjectList() {
                 
             </div>        
           </div>
-        <Footer/>
       </div>   
     );
   }
