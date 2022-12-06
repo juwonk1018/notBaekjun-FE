@@ -2,6 +2,7 @@ import './mainBar.css';
 import React, {useState} from "react";
 import { AppBar, Tabs, Tab, InputBase, Toolbar, IconButton, Typography, Menu, MenuItem, Button} from "@material-ui/core";
 import AccountCircle from '@material-ui/icons/AccountCircle';
+import Logo from './logo.png';
 
 function MainBar(props) {
 
@@ -12,6 +13,7 @@ function MainBar(props) {
       <div>
         <AppBar position="static" color="default">
         <Toolbar >
+            <img src={Logo} width = '120px'/>
             <Tabs value={value} onChange={handleValue} className="mainTab" indicatorColor="primary" textColor="primary">
             <Tab label="HOME" href = "/" />
             <Tab label="PROJECT LIST"  href = "/project"/>
