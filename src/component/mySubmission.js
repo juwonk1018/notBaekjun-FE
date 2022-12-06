@@ -1,7 +1,8 @@
 import React, {useState} from "react";
 import { saveAs } from "file-saver";  
-import { FileUploader } from "react-drag-drop-files";
+import { Table, TableBody, TableContainer, TableCell, TableHead, TableRow, Paper} from "@material-ui/core";
 import "./mySubmission.css"
+import Footer from "../component/footer.js";
 
 
 
@@ -17,6 +18,12 @@ function MySubmission() {
     var blob = new Blob([outputText], { type: "text/plain;charset=utf-8" });
     saveAs(blob, "outputTextFile.txt");
   }
+
+  const [files, setFiles] = useState([]);
+
+  const handleFileChange = (event) =>{
+    setFiles(Array.from(event.target.files || []));
+  };
 
   
   const handleChange = (event) => {
@@ -35,36 +42,48 @@ function MySubmission() {
     return (
       <div>
         <div className = "wrap">
-        <div className = 'inputDiv'>
-          <textarea
-            type="text"
-            className = 'input'
-            name="message"
-            onChange={handleChange}
-            value={message}
-          />
-        <button onClick={handleClick}>Update</button>
-      </div>
-      <div className = "option">
-        <div id = "uploadedFiles">
-          <div className = 'fileDiv'>
-            <input type = "file" id = "fileInput" name = "filename" multiple = "multiple" />
-              <label className = "fileInputButton" for = "fileInput">
-                  Upload
-              </label>                  
-            </div>                
+          <div className = 'inputDiv'>
+            <textarea
+              type="text"
+              className = 'input'
+              name="message"
+              onChange={handleChange}
+              value={message}
+            />
+            <button id = "updateButton" onClick={handleClick} />
+            <label className = "fileInputButton" for = "updateButton">Update</label>
           </div>
+          <div className = "fileWrap">
+            <div className = "uploadedFiles">
+              <div className = 'fileDiv'>
+                <TableBody>
+                  {files.map((file) => (
+                    <p id = "fileName"><b>Uploaded File:</b> {file.name}</p>
+                  ))}
+                </TableBody>
+                              
+              </div>
+              
+                          
+            </div>
+            <div className ="fileButtonDiv">
+                <input type = "file" id = "fileInput" name = "filename" onChange = {handleFileChange} />
+                <label className = "fileInputButton" for = "fileInput">Upload</label>
+            </div>
+          </div>
+          
         </div>
-      </div>
-      <div className = "outputDiv">
-        <div className = "outputTitle">
-          <h4>Output</h4>
+        <div className = "outputDiv">
+          <div className = "outputTitle">
+            <h4>Output</h4>
+          </div>
+          <div className = "output">
+            <h2>{updated}</h2>
+            <button id = "outputButton" onClick={() => exportFile()} />
+          </div>
+          <label className = "fileInputButton" for = "outputButton">Export File!</label>
         </div>
-        <div className = "output">
-          <h2>{updated}</h2>
-          <button onClick={() => exportFile()}>exportFile</button>
-        </div>
-      </div>
+        <Footer />
     </div>  
   );
 }
