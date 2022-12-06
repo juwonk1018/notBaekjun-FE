@@ -1,21 +1,24 @@
 import React, {useState} from "react";
 import { saveAs } from "file-saver";  
-import { Button } from "@material-ui/core";
+import { FileUploader } from "react-drag-drop-files";
 import "./mySubmission.css"
 
-function exportFile() {
-  let outputText =
-    "나는 뽀로로가 좋아!";
 
-  var blob = new Blob([outputText], { type: "text/plain;charset=utf-8" });
-  saveAs(blob, "outputTextFile.txt");
-}
 
 function MySubmission() {
   const [message, setMessage] = useState('');
 
   const [updated, setUpdated] = useState(message);
 
+  const exportFile = () => {
+    let outputText =
+      "Here's your intput: " + message;
+  
+    var blob = new Blob([outputText], { type: "text/plain;charset=utf-8" });
+    saveAs(blob, "outputTextFile.txt");
+  }
+
+  
   const handleChange = (event) => {
     setMessage(event.target.value);
   };
@@ -25,7 +28,7 @@ function MySubmission() {
       setUpdated('aakd');
     }
     else{
-      setUpdated('bob alice');
+      setUpdated("Hello World! I am " + message);
     }
     
   };
@@ -33,14 +36,13 @@ function MySubmission() {
       <div>
         <div className = "wrap">
         <div className = 'inputDiv'>
-          <input
+          <textarea
             type="text"
             className = 'input'
             name="message"
             onChange={handleChange}
             value={message}
           />
-
         <button onClick={handleClick}>Update</button>
       </div>
       <div className = "option">

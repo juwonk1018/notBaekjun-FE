@@ -1,9 +1,11 @@
 import React from 'react';
 import "./login.css"
 
+
 function Login() {
 
   return (
+    /*
     <div id="login-form-wrap">
       <h2>LOGIN</h2>
       <form id="login-form">
@@ -20,6 +22,9 @@ function Login() {
       <div id="create-account-wrap">
         <p>Not a member? <a href="./signup">Create Account</a> <a href="./">Home</a></p>
       </div>
+    </div>*/
+    <div>
+
     </div>
   );
   }
