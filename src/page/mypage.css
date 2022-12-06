@@ -1,0 +1,8 @@
+.myPageWrapper{
+    display : flex;
+    flex-direction: column;
+}
+
+.mainContent{
+    margin-top : 30px;
+}

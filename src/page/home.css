@@ -1,11 +1,7 @@
-.wrapper{
+.homeWrapper{
     display : flex;
     flex-direction: column;
+    margin : auto;
+    margin-left : 0px;
     text-align: center;
-    height:100vh;
-    
-}
-
-.mainBody{
-  flex: 1;
 }

@@ -13,7 +13,7 @@ import './project.css'
 function Project() {
 
     return (
-        <div>
+        <div className = "projectWrapper">
             <MainBar val = {1}/>
             <ProjectList show = {true} width = {1500}/>
             <Footer/>

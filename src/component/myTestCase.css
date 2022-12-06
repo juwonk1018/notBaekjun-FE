@@ -1,0 +1,12 @@
+.testCase{
+  margin: auto;
+  margin-left : 50px;
+}
+.testCase1{
+  float : left;
+}
+
+.testCase2{
+  margin-left : 10px;
+  float : left;
+}
