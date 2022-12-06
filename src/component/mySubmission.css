@@ -58,6 +58,18 @@ body {
     display: flex;
 }
 
+.outputButtonClick{
+  padding: 6px;
+  background-color:#3ca9e2;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 40px;
+}
+
 .fileWrap{
   height: 420px;
     width: 45%;
@@ -109,7 +121,7 @@ body {
     margin-top: 600px;
     margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 100px;
+    margin-bottom: 20px;
 }
 
 .outputTitle{
@@ -123,5 +135,9 @@ body {
     margin: auto;
     position: relative;
     text-align: center;
+}
+
+p {
+  text-align: center;
 }
 

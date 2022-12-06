@@ -73,16 +73,20 @@ function MySubmission() {
           </div>
           
         </div>
-        <div className = "outputDiv">
-          <div className = "outputTitle">
-            <h4>Output</h4>
+        <div className = "outputWrap">
+          <div className = "outputDiv">
+            <div className = "outputTitle">
+              <h4>Output</h4>
+            </div>
+            <div className = "output">
+              <p>{updated}</p>
+              <button id = "outputButton" onClick={() => exportFile()} />
+            </div>
+            
           </div>
-          <div className = "output">
-            <h2>{updated}</h2>
-            <button id = "outputButton" onClick={() => exportFile()} />
-          </div>
-          <label className = "fileInputButton" for = "outputButton">Export File!</label>
+          <label className = "outputButtonClick" for = "outputButton">Export File!</label>
         </div>
+        
         <Footer />
     </div>  
   );
